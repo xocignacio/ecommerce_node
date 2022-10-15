@@ -1,4 +1,4 @@
-# ✨ proyecto_autentificacion + process ✨
+# ✨Ecommerce con node ✨
 ##  correr proyecto =>  nodemon app.js 
 
 
