@@ -64,3 +64,5 @@ let ObjetoProcess = {
 }
 console.log(ObjetoProcess );
 
+console.log(`{correr en modo cluster => pm2 start ./ecosystem.config.cjs}`)
+
