@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# ✨ Ecommerce full stack con node js✨
-## run nodemon app.js 
-=======
 # ✨Ecommerce con node ✨
 ##  correr proyecto =>  nodemon app.js 
->>>>>>> 7b789fefe13d744073848e5d05275684267aabfc
+
 
 
 ## Conceptos
