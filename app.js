@@ -11,6 +11,7 @@ import initializePassport from './src/config/passport.config.js';
 import minimist from 'minimist';
 import { MongoDBService } from './src/MongoDBService/index.js';
 import { config } from './src/config/index.js';
+import { logger } from './src/Logs/utils.js';
 
 const app = express();
 
@@ -22,7 +23,9 @@ const server = app.listen(config.server.PORT, () => {
   });
 
 MongoDBService.init();
-  
+
+app.use(logger());
+
   
 /////////// Lineas para utilizar handlebars ///////////////////
 app.engine('handlebars',handlebars.engine());    
@@ -65,4 +68,6 @@ let ObjetoProcess = {
 console.log(ObjetoProcess );
 
 console.log(`{correr en modo cluster => pm2 start ./ecosystem.config.cjs}`)
+
+
 

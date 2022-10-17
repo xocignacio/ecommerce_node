@@ -1,5 +1,5 @@
-# ✨ proyecto_autentificacion + process ✨
-##  correr proyecto =>  nodemon app.js 
+# ✨ Ecommerce full stack con node js✨
+## run nodemon app.js 
 
 
 ## Conceptos
@@ -8,11 +8,12 @@
 - persistencia userService from '../../models/Users.js
 - Motor de plantilla hb
 - Variables de entorno manejadas con dotenv 
+- Logs realizados con libreria winston (log inicio sesion) registra actividad de la aplicacion => soporte para multiples transportes. Al ejecutar el logger, genera un archivo de log cuando alguien visita el home
 
 ## rutas
 - http://localhost:8080/register
 - http://localhost:8080/login
-- http://localhost:8080/info
+- http://localhost:8080/
 
 Dependencias y librerias
 
@@ -29,5 +30,8 @@ Dependencias y librerias
     "nodemon": "^2.0.19",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
+    - Winston: npm install winston
+     - Artillery: npm install -g artillery
+
 
 ```
