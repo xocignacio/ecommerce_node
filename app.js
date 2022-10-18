@@ -12,6 +12,7 @@ import minimist from 'minimist';
 import { MongoDBService } from './src/MongoDBService/index.js';
 import { config } from './src/config/index.js';
 import { logger } from './src/Logs/utils.js';
+import { productsRouter, cartsRouter } from "./routes/index.js";
 
 const app = express();
 
@@ -45,6 +46,9 @@ app.use(session({                      //// middleware de session que se guarde 
     resave:false,
     saveUninitialized:false
 }))
+
+app.use(config.server.routes.products, productsRouter);
+app.use(config.server.routes.carts, cartsRouter);
 
 
 

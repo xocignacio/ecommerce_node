@@ -19,6 +19,9 @@ router.get('/login',(req,res)=>{
     res.render('login');
 })
 
+router.get('/productos'),(req,res) => {
+    res.render('productos',{user:req.session.user});
+}
 
 router.get('/logout',(req,res) => {
     req.session.destroy(function(err){
