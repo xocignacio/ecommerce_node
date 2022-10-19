@@ -1,9 +1,13 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 
-#fondoRegister { background: linear-gradient(to left,#4568DC,#B06AB3);}
+#fondoRegister { 
+  background: linear-gradient(to left,#4568DC,#B06AB3);
+  margin-left: 1rem;
+   
+}
 
 input{
   display: block;
@@ -13,7 +17,7 @@ input{
   color: #c6c6c6;
   border-bottom: 1px solid grey;
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 5px 5px 5px 5px;
 
   
 }
@@ -24,9 +28,9 @@ input:focus{
 }
 
 label {
-  font-size: 16px;
+    font-size: 16px;
     color: grey;
-    left: 5px;
+ /*    left: 5px; */
     top: 10px;
     transition: 0.5s ease-in-out all;
     pointer-events: none;
@@ -38,20 +42,17 @@ input:focus~label{
 
 
 .card{
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
     align-items: center;
     opacity: 0.8;
-    border-radius: 20px;
-   
+    border-radius: 20px;   
     text-align: center;
     box-shadow: 0 2px 20px grey;
-
     cursor: pointer;
     transition: transform 200ms ease-in;
    
 }
-
-
 
 .card:hover {
   box-shadow: 5px 10px 20px 10px rgba(250, 247, 247, 0.27);
@@ -62,21 +63,15 @@ input:focus~label{
 
 .Bienvenidos{
     color: white;
-    margin-top: 5rem;
-    margin-left: 1rem;
+    margin-top: 4rem;
+    /* margin-left: 1rem; */
     /* background-image: url(../assets/student-g33a38f747_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;     
     height: 900px; */
 }
 
-.follow {
-  margin-left: 1rem;
-}
 
-#carouselExampleCaptions {
-  margin-left: 1rem;
-}
 
 
 .linkedin {

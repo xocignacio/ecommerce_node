@@ -18,11 +18,11 @@ router.get('/login',(req,res)=>{
     if(req.session.user) return res.redirect('/');
     res.render('login');
 })
-
+/* 
 router.get('/productos'),(req,res) => {
     res.render('productos',{user:req.session.user});
 }
-
+ */
 router.get('/logout',(req,res) => {
     req.session.destroy(function(err){
         if(err){
@@ -41,6 +41,10 @@ router.get('/info',(req,res)=>{
 router.get('/',(req,res)=>{
     req.logger.error("Entre al home");
     res.send("Bienvenidos");
+})
+
+router.get('/productos',(req,res)=> {
+      res.render ('productos')
 })
 
 export default router;

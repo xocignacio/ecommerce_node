@@ -1,10 +1,22 @@
+*{
+  list-style-type:none;   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #fondoLogin { background: linear-gradient(to left,#4568DC,#B06AB3);}
 
 .card{
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     align-items: center;
     opacity: 0.8;
     border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 20px grey;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
 }
 
 .card:hover {
