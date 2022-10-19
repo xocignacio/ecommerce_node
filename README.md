@@ -1,5 +1,5 @@
 # ✨Ecommerce con node js ✨
-✨[Deploy Heroku](https://ecommercenodejsnacho.herokuapp.com/login)✨
+✨[Deploy app con Heroku](https://ecommercenodejsnacho.herokuapp.com/login)✨
 
 ## Conceptos
 - Express para levantar servidores y utilizar routers
