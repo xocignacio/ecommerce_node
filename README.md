@@ -1,5 +1,5 @@
 # ✨Ecommerce con node js ✨
-##  correr proyecto =>  nodemon app.js 
+
 
 
 
@@ -34,6 +34,13 @@
   src_artillery/app.js => funcion de numeros primos para evaluar con artillery su comportamiento en modo fork y se puede pasar por argumento modo cluster
 
 ```
+## Framework
+-  [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
+
+## Estilado
+-Css puro 
+- animate.css (Efecto animado letras)
+- fontawesome (Icons)
 
 Dependencias y librerias
 
