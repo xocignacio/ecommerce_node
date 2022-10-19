@@ -1,8 +1,6 @@
 # ✨Ecommerce con node js ✨
 
 
-
-
 ## Conceptos
 - Express para levantar servidores y utilizar routers
 - Utiliza BD mongo atlas
@@ -38,7 +36,7 @@
 -  [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
 
 ## Estilado
--Css puro 
+- Css puro 
 - animate.css (Efecto animado letras)
 - fontawesome (Icons)
 
