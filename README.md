@@ -1,20 +1,21 @@
-# ✨Ecommerce con node ✨
+# ✨Ecommerce con node js ✨
 ##  correr proyecto =>  nodemon app.js 
 
 
 
 ## Conceptos
+- Express para levantar servidores y utilizar routers
 - Utiliza BD mongo atlas
-- contraseñas hasheadas 
+- Schemas de mongoose
+- express-session :  permite que una variable sea accesible desde cualquier lugar del sitio. Se almacena del lado del servidor.Se utiliza principalmente para guardar los datos de usuario al iniciar sesión.
+- contraseñas hasheadas con bcrypt 
 - persistencia userService from '../../models/Users.js
-- Motor de plantilla hb
+- Motor de plantilla handlebars
 - Variables de entorno manejadas con dotenv 
-- Logs realizados con libreria winston (log inicio sesion) registra actividad de la aplicacion => soporte para multiples transportes. Al ejecutar el logger, genera un archivo de log cuando alguien visita el home
-
-## rutas
-- http://localhost:8080/register
-- http://localhost:8080/login
-- http://localhost:8080/
+- utilizo pm2 un process manager que simplifica la app para ejecutarla como cluster
+- Logs realizados con libreria winston (log inicio sesion) registra actividad de la aplicacion => soporte para multiples transportes. Al ejecutar el logger, genera un    archivo de log cuando alguien visita el home
+- Passport middleware de auntentificacion de sesion
+- Heroku: Es una plataforma en la nube que ofrece servicio para alojar e implementar aplicaciones web en varios lenguajes de programación, como Node.js, entre otros.
 
 
 ## ARTILLERY 
@@ -37,6 +38,7 @@
 Dependencias y librerias
 
 ```sh
+   "animate.css": "^4.1.1",
     "bcrypt": "^5.0.1",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
@@ -44,13 +46,14 @@ Dependencias y librerias
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
+    "joi": "^17.6.3",
+    "jsonwebtoken": "^8.5.1",
     "minimist": "^1.2.6",
     "mongoose": "^6.6.1",
     "nodemon": "^2.0.19",
     "passport": "^0.6.0",
-    "passport-local": "^1.0.0"
-    - Winston: npm install winston
-     - Artillery: npm install -g artillery
+    "passport-local": "^1.0.0",
+    "winston": "^3.8.2"
 
 
 ```
