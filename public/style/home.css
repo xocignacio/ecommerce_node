@@ -6,7 +6,13 @@
     
 }
 
-#fondoAPP { background: linear-gradient(to left,#4568DC,#B06AB3);};
+#fondoAPP { 
+  background-image: url(../assets/astronomy-g34f575608_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+};
 
 
 .a {

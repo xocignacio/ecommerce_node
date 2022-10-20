@@ -4,8 +4,10 @@
 }
 
 #fondoRegister { 
-  background: linear-gradient(to left,#4568DC,#B06AB3);
+  background-image: url(../assets/astronomy-g34f575608_1920.jpg);
   margin-left: 1rem;
+  margin-right: 0%;
+  background-position: center;
    
 }
 
@@ -51,6 +53,7 @@ input:focus~label{
     box-shadow: 0 2px 20px grey;
     cursor: pointer;
     transition: transform 200ms ease-in;
+   
    
 }
 
