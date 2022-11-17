@@ -71,7 +71,11 @@ let ObjetoProcess = {
 }
 console.log(ObjetoProcess );
 
-console.log(`{correr en modo cluster => pm2 start ./ecosystem.config.cjs}`)
+console.log(`{correr en modo cluster => pm2 start ./ecosystem.config.cjs}`);
+
+app.get ('/', (req,res)=>{
+  res.send ({status: "success", message:"Hola cliente"})
+} )
 
 
 
