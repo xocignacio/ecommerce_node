@@ -33,7 +33,17 @@
 
 ```
 ## Test
-> Internos: modulo http estandar  que viene en la libreria de node y Externos  Paquetes npm como axios o got 
+> testeo modulos a nivel backend. Hay 2 formas de realizar solicitud http en node atraves de  clientes http:
+- Internos: modulo http estandar  que viene en la libreria de node 
+- Externos  Paquetes npm como axios o got 
+
+>Testeo servidores
+- realizamos una peticion a un endpoint
+- MOCHA y CHAI => framework de prueba para javascript que se ejecuta en node, Realiza pruebas TDD
+- ```sh
+  npm run testApi
+
+```
 
 ## Framework
 -  [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
