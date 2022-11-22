@@ -14,7 +14,7 @@
 - Logs realizados con libreria winston (log inicio sesion) registra actividad de la aplicacion => soporte para multiples transportes. Al ejecutar el logger, genera un    archivo de log cuando alguien visita el home
 - Passport middleware de auntentificacion de sesion
 - Heroku: Es una plataforma en la nube que ofrece servicio para alojar e implementar aplicaciones web en varios lenguajes de programación, como Node.js, entre otros.
-
+- Testeo de funcionalidades y servidor (Programamos un cliente para que haga una peticiona  nuestro mismo servidor)
 
 ## ARTILLERY 
 > Artillery es una libreria nativa de node, para realizar pruebas de carga, simula procesos, como numeros de usuarios y peticiones que buscan comprobar el comprotamiento del server bajo ESTRES
@@ -32,6 +32,19 @@
   src_artillery/app.js => funcion de numeros primos para evaluar con artillery su comportamiento en modo fork y se puede pasar por argumento modo cluster
 
 ```
+## Test
+> testeo modulos a nivel backend. Hay 2 formas de realizar solicitud http en node atraves de  clientes http:
+- Internos: modulo http estandar  que viene en la libreria de node 
+- Externos  Paquetes npm como axios o got 
+
+>Testeo servidores
+- realizamos una peticion a un endpoint
+- MOCHA y CHAI => framework de prueba para javascript que se ejecuta en node, Realiza pruebas TDD
+- ```sh
+  npm run testApi
+
+```
+
 ## Framework
 -  [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
 
