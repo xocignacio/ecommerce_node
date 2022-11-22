@@ -4,7 +4,7 @@ const router = Router();
 
 router.get('/',(req,res)=>{
     if(!req.session.user) return res.redirect('/login');
-    req.logger.debug("Sesion logeada con exito");           //// Logger inicio_sesion_succes
+    req.logger.debug("Sesion logeada con exito");           
     res.render('home',{user:req.session.user});
       
 })
@@ -18,11 +18,7 @@ router.get('/login',(req,res)=>{
     if(req.session.user) return res.redirect('/');
     res.render('login');
 })
-/* 
-router.get('/productos'),(req,res) => {
-    res.render('productos',{user:req.session.user});
-}
- */
+
 router.get('/logout',(req,res) => {
     req.session.destroy(function(err){
         if(err){
