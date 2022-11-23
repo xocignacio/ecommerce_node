@@ -13,6 +13,8 @@ import { MongoDBService } from './src/MongoDBService/index.js';
 import { config } from './src/config/index.js';
 import { logger } from './src/Logs/utils.js';
 import { productsRouter, cartsRouter } from "./routes/index.js";
+import swaggerJsdoc from 'swagger-jsdoc';
+import swaggerUiExpress from 'swagger-ui-express';
 
 const app = express();
 
@@ -26,7 +28,6 @@ const server = app.listen(config.server.PORT, () => {
 MongoDBService.init();
 
 app.use(logger());
-
   
 /////////// Lineas para utilizar handlebars ///////////////////
 app.engine('handlebars',handlebars.engine());    
@@ -34,6 +35,7 @@ app.set('views',__dirname+'/views');                 ////dirname es la ruta abso
 app.set('view engine','handlebars');
 
 app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 app.use(express.static(__dirname+'/public'))
 
 app.use(session({                      //// middleware de session que se guarde en mongo
@@ -49,7 +51,6 @@ app.use(session({                      //// middleware de session que se guarde 
 
 app.use(config.server.routes.products, productsRouter);
 app.use(config.server.routes.carts, cartsRouter);
-
 
 
 initializePassport();
@@ -76,6 +77,23 @@ console.log(`{correr en modo cluster => pm2 start ./ecosystem.config.cjs}`);
 app.get ('/', (req,res)=>{
   res.send ({status: "success", message:"Hola cliente"})
 } )
+
+
+///////////////////////////////// SWAGGER //////////////////////////////////
+
+const swaggerOptions = {
+  definition: {
+      openapi:'3.0.1',
+      info: {
+          title:"Mi primera decoumentacion",
+          description:"Es una api para probar documentación"
+      }
+  },
+  apis:[`${__dirname}/docs/**/*.yaml`]
+}
+const specs = swaggerJsdoc(swaggerOptions);
+
+app.use('/api-docs',swaggerUiExpress.serve,swaggerUiExpress.setup(specs))
 
 
 
