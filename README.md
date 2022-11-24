@@ -51,11 +51,9 @@
 - Generar  un modelo de documentacion claro y de como funciona algo que implementamos es muy importante para poder trabajar en equipo
 - Swagger es un framework de documentacion https://swagger.io/  herramienta extremadamente útil para describir, producir, consumir y visualizar APIs RESTful. Es multiplataforma.
 - Proporciona una interfaz web gráfica a modo de sandbox donde podemos testear los endpoints API a la vez que estamos consultando la documentación. 
+ [Ver documentacion](http://localhost:8080/api-docs/)
 
- ```sh
-  [Ver documentacion](http://localhost:8080/api-docs/)
 
-```
 
 ## Framework
 -  [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
