@@ -41,7 +41,7 @@
 >Testeo servidores
 - realizamos una peticion a un endpoint
 - MOCHA y CHAI => framework de prueba para javascript que se ejecuta en node, Realiza pruebas TDD
-- ```sh
+ ```sh
   npm run testApi
 
 ```
