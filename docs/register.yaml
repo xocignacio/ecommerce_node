@@ -1,0 +1,39 @@
+# Register
+components:
+  requestBodies:
+   
+  schemas:
+    Register:
+      type: object
+      properties:
+        email:
+          type: string
+          description: Correo del usuario, campo único.
+        password:
+          type: string
+          description: Contraseña Hasheada con bcrypt.
+        name:
+          type: string
+          description: Nombre completo del usuario.
+      example:
+        email: nombredecorreo@correo.com
+        password: 1asd391asc391%
+        name: Viviana Canzoniero
+paths:
+  /Register/:
+    post:
+      summary: Crea un nuevo usuario
+      tags:
+        - Register
+      responses:
+        "200":
+          description: El usuario se creo satisfactoriamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Register'
+                 
+   
+          

@@ -1,0 +1,35 @@
+# Login
+components:
+  requestBodies:
+   
+  schemas:
+    Login:
+      type: object
+      properties:
+        email:
+          type: string
+          description: Correo del usuario, campo único.
+        password:
+          type: string
+          description: Contraseña Hasheada con bcrypt.
+      example:
+        email: nombredecorreo@correo.com
+        password: 1asd391asc391%
+paths:
+  /Login/:
+    get:
+      summary: Para poder visitar el home es necesario realizar un login exitoso
+      tags:
+        - Login
+      responses:
+        "200":
+          description: Render login si quiero entrar al home
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Login'
+                 
+   
+          

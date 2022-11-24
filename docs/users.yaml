@@ -14,8 +14,8 @@ components:
           type: string
           description: Contraseña del usuario sin hashear
       example:
-        name: Maximiliano Carnero
-        email: correomaxi@correo.com
+        name: Nachito canzoniero
+        email: nachin_canz@correo.com
         password: 123
   schemas:
     User:
@@ -35,8 +35,8 @@ components:
           description: Contraseña Hasheada con bcrypt.
       example:
         id: ObjectId("asdas33123asd3ze31")
-        name: Veronica Vipputo
-        email: correoVero@correo.com
+        name: Viviana Canzoniero
+        email: Vivi@correo.com
         password: 1asd391asc391%
 paths:
   /api/users/:

@@ -15,6 +15,10 @@ import { logger } from './src/Logs/utils.js';
 import { productsRouter, cartsRouter } from "./routes/index.js";
 import swaggerJsdoc from 'swagger-jsdoc';
 import swaggerUiExpress from 'swagger-ui-express';
+import { ApolloServer } from 'apollo-server-express';
+import typeDefs from './src/graphQL_apollo/typeDefs.js'
+import resolvers from './src/graphQL_apollo/resolvers.js';
+
 
 const app = express();
 
@@ -85,15 +89,28 @@ const swaggerOptions = {
   definition: {
       openapi:'3.0.1',
       info: {
-          title:"Mi primera decoumentacion",
-          description:"Es una api para probar documentación"
+          title:"Bienvenido a la documentacion de mi proyecto",
+          description:"Documentacion del funcionamiento de mi app"
       }
   },
   apis:[`${__dirname}/docs/**/*.yaml`]
 }
+
 const specs = swaggerJsdoc(swaggerOptions);
 
 app.use('/api-docs',swaggerUiExpress.serve,swaggerUiExpress.setup(specs))
+console.log('- Interfaz UI swagger funcionando ✔')
+
+//////////////////////////// GraphQl y apollo ///////////////////////////
+const aServer = new ApolloServer({
+  typeDefs,
+  resolvers,
+ 
+})
+
+await aServer.start();
+aServer.applyMiddleware({app})
+console.log('- Server apollo funcionando ✔')
 
 
 

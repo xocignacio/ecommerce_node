@@ -1,0 +1,22 @@
+# Home
+components:
+  requestBodies:
+ 
+paths:
+  /Home/:
+    get:
+      summary: Para acceder a la app hay que estar logeado
+      tags:
+        - Home
+      responses:
+        "200":
+          description: Logeado con exito
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                 
+                 
+   
+          
