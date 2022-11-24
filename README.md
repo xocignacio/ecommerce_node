@@ -15,6 +15,7 @@
 - Passport middleware de auntentificacion de sesion
 - Heroku: Es una plataforma en la nube que ofrece servicio para alojar e implementar aplicaciones web en varios lenguajes de programación, como Node.js, entre otros.
 - Testeo de funcionalidades y servidor (Programamos un cliente para que haga una peticiona  nuestro mismo servidor)
+- Documentacion con swagger
 
 ## ARTILLERY 
 > Artillery es una libreria nativa de node, para realizar pruebas de carga, simula procesos, como numeros de usuarios y peticiones que buscan comprobar el comprotamiento del server bajo ESTRES
@@ -45,6 +46,10 @@
 
 ```
 
+## Documentacion 
+- Mantiene claros los puntos importantes de nuestra API, metodos y endpoint 
+- Generar  un modelo de documentacion claro y de como funciona algo que implementamos es muy importante para poder trabajar en equipo
+
 ## Framework
 -  [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
 
@@ -56,7 +61,8 @@
 Dependencias y librerias
 
 ```sh
-   "animate.css": "^4.1.1",
+  "animate.css": "^4.1.1",
+    "apollo-server-express": "^3.11.1",
     "bcrypt": "^5.0.1",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
@@ -64,6 +70,7 @@ Dependencias y librerias
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
+    "graphql": "^16.6.0",
     "joi": "^17.6.3",
     "jsonwebtoken": "^8.5.1",
     "minimist": "^1.2.6",
@@ -71,7 +78,14 @@ Dependencias y librerias
     "nodemon": "^2.0.19",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.6.0",
     "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0",
+    "supertest": "^6.3.1"
 
 
 ```
