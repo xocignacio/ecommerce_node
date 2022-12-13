@@ -13,5 +13,7 @@ form.addEventListener('submit',evt=>{
         }
     }).then(result=>result.json()).then(json=>window.location.replace('/'));
     
+    
+    
 })
 

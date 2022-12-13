@@ -116,11 +116,20 @@
     <form id="registerForm">
         <label>Nombre</label>
         <input name="name">
+        <label>Apellido</label>
+        <input name="name">
         <label>Email</label>
         <input name="email">
+        <label for="start">Fecha nacimiento:</label>
+        <input type="date" id="start" name="trip-start"
+              value="2018-07-22"
+              min="2018-01-01" max="2018-12-31">
+
         <label>Password</label>
         <input type="password" name="password">
         <br>
+        <input type="reset" value="Borrar" class="btn btn-dark">
+        <hr>
         <input type="submit" class="btn btn-dark">
         <hr>    
         <label>¿Ya tienes una cuenta?</label>    

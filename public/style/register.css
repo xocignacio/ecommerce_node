@@ -42,17 +42,24 @@ input:focus~label{
   top: -14px;
 }
 
+#start{
+  text-align: center;
+}
+
 
 .card{
     margin-top: 4rem;
     margin-bottom: 2rem;
+    
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.6;
     border-radius: 20px;   
     text-align: center;
     box-shadow: 0 2px 20px grey;
     cursor: pointer;
     transition: transform 200ms ease-in;
+    
+   
    
    
 }

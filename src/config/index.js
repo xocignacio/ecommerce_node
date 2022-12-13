@@ -28,6 +28,7 @@ const config = {
       carts: "/api/carrito",
       login: "/api/login",
       register: "/api/register",
+      info: "/api/info",
     },
   },
 };

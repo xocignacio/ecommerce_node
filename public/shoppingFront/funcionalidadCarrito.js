@@ -5,6 +5,8 @@ const contenedorCarrito = document.getElementById('carrito-contenedor')
 
 const botonVaciar = document.getElementById('vaciar-carrito')
 
+const botonFinalizar = document.getElementById('finalizar-compra')
+
 const contadorCarrito = document.getElementById('contadorCarrito')
 
 const cantidad = document.getElementById('cantidad')
@@ -18,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         actualizarCarrito()
     }
+})
+
+botonFinalizar.addEventListener('click', () =>{
+   
+    alert('muchas gracias por comprar')
+    
 })
 
 botonVaciar.addEventListener('click', () => {
@@ -39,7 +47,7 @@ stockProductos.forEach((producto) => {
 
     `
     contenedorProductos.appendChild(div)
-
+     
     //EL HTML EN EL DOM:
     const boton = document.getElementById(`agregar${producto.id}`)
     //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado

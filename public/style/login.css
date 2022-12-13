@@ -7,14 +7,16 @@
 
 #fondoLogin { 
   background-image: url(../assets/astronomy-g34f575608_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   
-  /* background: linear-gradient(to left,#4568DC,#B06AB3); */}
+  }
 
 .card{
-    margin-top: 2rem;
+    margin-top: 9rem;
     margin-bottom: 2rem;
     align-items: center;
-    opacity: 0.9;
+    opacity: 0.6;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 2px 20px grey;

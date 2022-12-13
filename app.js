@@ -82,9 +82,7 @@ app.get ('/', (req,res)=>{
   res.send ({status: "success", message:"Hola cliente"})
 } )
 
-
 ///////////////////////////////// SWAGGER //////////////////////////////////
-
 const swaggerOptions = {
   definition: {
       openapi:'3.0.1',
