@@ -4,7 +4,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-image]: ![image](https://user-images.githubusercontent.com/90514599/208019239-f75ce1ea-f4d2-4d72-a4a0-91301e55ab87.png)
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 ## Conceptos
