@@ -52,23 +52,19 @@ input:focus~label{
     margin-bottom: 2rem;
     
     align-items: center;
-    opacity: 0.6;
+    opacity: 0.8;
     border-radius: 20px;   
     text-align: center;
     box-shadow: 0 2px 20px grey;
     cursor: pointer;
     transition: transform 200ms ease-in;
-    
-   
-   
-   
+       
 }
 
 .card:hover {
   box-shadow: 5px 10px 20px 10px rgba(250, 247, 247, 0.27);
   transition: all 0.3s linear;
 }
-
 
 
 .Bienvenidos{
@@ -80,9 +76,6 @@ input:focus~label{
     background-repeat: no-repeat;     
     height: 900px; */
 }
-
-
-
 
 .linkedin {
   display: flex;
@@ -391,3 +384,10 @@ input:focus~label{
   --animate-duration: 6s;
 }
 
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
+}

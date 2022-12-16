@@ -11,12 +11,17 @@ form.addEventListener('submit',evt=>{
         headers:{
             "Content-Type":"application/json"
         }
-    }).then(result=>result.json()).then(json=>window.location.replace('/login'));
-   
+    }).then(result=>result.json()).then(json=>window.location.replace('/login')); 
     
 })
 
-form.addEventListener("submit", e=> {
+const nombre = document.getElementById ("name")
+const email = document.getElementById ("email")
+const pass = document.getElementById ("password")
+const parrafo = document.getElementById ("warnings")
+const formValidation = document.getElementById ("registerForm")
+ 
+registerForm.addEventListener("submit", e=> {
   e.preventDefault()
   let warnings = ""
   let entrarEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -40,7 +45,7 @@ form.addEventListener("submit", e=> {
     parrafo.innerHTML = warnings
   }
   else {
-    alert('Muchas gracias, ya sos parte de coffeeCLUB') 
+    alert('Muchas gracias') 
      
     }
 })

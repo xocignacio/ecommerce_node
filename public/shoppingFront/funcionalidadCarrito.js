@@ -1,14 +1,8 @@
-
 const contenedorProductos = document.getElementById('contenedor-productos')
-
 const contenedorCarrito = document.getElementById('carrito-contenedor')
-
 const botonVaciar = document.getElementById('vaciar-carrito')
-
 const botonFinalizar = document.getElementById('finalizar-compra')
-
 const contadorCarrito = document.getElementById('contadorCarrito')
-
 const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
 const cantidadTotal = document.getElementById('cantidadTotal')
@@ -24,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 botonFinalizar.addEventListener('click', () =>{
    
-    alert('muchas gracias por comprar')
+    alert('En breve nos comunicaremos contigo')
     
 })
 
@@ -48,11 +42,9 @@ stockProductos.forEach((producto) => {
     `
     contenedorProductos.appendChild(div)
      
-    //EL HTML EN EL DOM:
+  
     const boton = document.getElementById(`agregar${producto.id}`)
-    //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado
-    //le hago un get element by id (el de agregar) Obtengo el elemento y a dicho elemento le agregamos
-    //el add event listener
+    
 
     boton.addEventListener('click', () => {
         //esta funcion ejecuta el agregar el carrito con la id del producto
@@ -86,8 +78,6 @@ const agregarAlCarrito = (prodId) => {
     actualizarCarrito() //LLAMAMOS A LA FUNCION QUE CREAMOS EN EL TERCER PASO. CADA VEZ Q SE 
     //MODIFICA EL CARRITO
 }
-//agregarAlCarrito(1) //Le pasamos el ID por parametro. Tenemos que asigarle como evento esta funcion al boton
-//con el id de su producto correspondiente
 
 
 const eliminarDelCarrito = (prodId) => {
@@ -103,13 +93,8 @@ const eliminarDelCarrito = (prodId) => {
 
 const actualizarCarrito = () => {
    
-    //LOS APPENDS SE VAN ACUMULANDO CON LO QE HABIA ANTES
-    contenedorCarrito.innerHTML = "" //Cada vez que yo llame a actualizarCarrito, lo primero q hago
-    //es borrar el nodo. Y despues recorro el array lo actualizo de nuevo y lo rellena con la info
-    //actualizado
-    //-. AGREGAR AL MODAL. Recorremos sobre el array de carrito.
-
-    //Por cada producto creamos un div con esta estructura y le hacemos un append al contenedorCarrito (el modal)
+   
+    contenedorCarrito.innerHTML = "" 
     carrito.forEach((prod) => {
         const div = document.createElement('div')
         div.className = ('productoEnCarrito')
@@ -126,11 +111,10 @@ const actualizarCarrito = () => {
 
     })
     
-    contadorCarrito.innerText = carrito.length // actualizamos con la longitud del carrito.
+    contadorCarrito.innerText = carrito.length 
 
     console.log(carrito)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
-    //Por cada producto q recorro en mi carrito, al acumulador le suma la propiedad precio, con el acumulador
-    //empezando en 0.
+    
 
 }
