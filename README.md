@@ -1,11 +1,7 @@
 # ✨Ecommerce cervezas de otra galaxia✨
 ✨[Deploy app (viejo) con Heroku](https://ecommercenodejsnacho.herokuapp.com/login)✨
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="![image](https://user-images.githubusercontent.com/90514599/208019312-68dc485a-3c2b-47f9-ae0a-edd3f1969168.png)" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: ![image](https://user-images.githubusercontent.com/90514599/208019239-f75ce1ea-f4d2-4d72-a4a0-91301e55ab87.png)
-[circleci-url]: ![image](https://user-images.githubusercontent.com/90514599/208019280-a3bf2330-c656-4cc9-9702-77c8f2eb511c.png)
+![](https://firebasestorage.googleapis.com/v0/b/beerscript-ebe0f.appspot.com/o/IMAGEN%20PARA%20GITHUB.JPG?alt=media&token=9691ffe6-7682-4b1e-91a3-92820e453220){width='100px'}
 
 ## Conceptos
 - Express para levantar servidores y utilizar routers
