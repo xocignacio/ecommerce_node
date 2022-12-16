@@ -1,7 +1,7 @@
 # ✨Ecommerce cervezas de otra galaxia✨
 ✨[Deploy app (viejo) con Heroku](https://ecommercenodejsnacho.herokuapp.com/login)✨
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="![image](https://user-images.githubusercontent.com/90514599/208019312-68dc485a-3c2b-47f9-ae0a-edd3f1969168.png)" width="200" alt="Nest Logo" /></a>
 </p>
 
 [circleci-image]: ![image](https://user-images.githubusercontent.com/90514599/208019239-f75ce1ea-f4d2-4d72-a4a0-91301e55ab87.png)
